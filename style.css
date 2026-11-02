@@ -10,8 +10,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0 24px;
   background-color: #c1a7a7;
-
 }
+
+main{
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
 h1 {
     color:rgb(149, 149, 220);
 }
@@ -82,4 +88,29 @@ form{
     display: flex;
     flex-direction: column;
     gap: 4px;
+}
+.compare * {
+    outline: 2px dashed tomato;
+}
+
+nav{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    background-color: slategray;
+    padding: 8px 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(203, 5, 234);
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color:blue;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
 }
