@@ -19,3 +19,13 @@ function sayBye (){
 }
 sayBye();
 sayBye();
+
+let nextButton = document.querySelector("#events-btn");
+let eventsDescription = document.querySelector("#events-description");
+
+//Declare a show message option
+function showeventsDescription(){
+    eventsDescription.textContent = "Our next event will be Sunday November 7th at 2:00 PM!";
+}
+
+nextButton.addEventListener("click", showeventsDescription);
