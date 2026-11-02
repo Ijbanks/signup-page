@@ -1,6 +1,12 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    --brand: rgb(203, 5, 234);
+    --page-bg: #c1a7a7;
+    --text: black;
+    --surface: slategrey;
+}
 
 html {
   scroll-behavior: smooth;
@@ -9,7 +15,8 @@ html {
 body {
   font-family: Arial, sans-serif;
   margin: 0 24px;
-  background-color: #c1a7a7;
+  background-color: var(--page-bg);
+  color: var(--text);
 }
 
 main{
@@ -19,17 +26,18 @@ main{
 }
 
 h1 {
-    color:rgb(149, 149, 220);
+    color: var(--brand);
 }
 h2 {
-    color: rgb(203, 5, 234);
+    color: var(--brand);
+    text-decoration:none; 
 }
 
 .box{
     margin: 40px 0;
-    border: 3px dashed black;
+    border: 3px solid black;
     padding: 60px;
-    background-color: slategrey;
+    background-color: var(--surface);
     border-radius: 10px;
 }
 
@@ -49,7 +57,8 @@ button {
 
     display: block;
     padding: 10px;
-    background-color: grey
+    background-color: grey;
+    text-decoration: none;
 }
 
 input:focus,
@@ -73,7 +82,7 @@ input:user-invalid{
     flex: 1 1 200px;
     border: 3px solid black;
     padding: 16px;
-    background-color: slategray;
+    background-color: var(--surface);
     border-radius: 10px;
 }
 
@@ -82,6 +91,7 @@ form{
     flex-direction: column;
     gap: 16px;
     max-width: 30rem;
+   
 }
 
 .field{
@@ -97,7 +107,7 @@ nav{
     display: flex;
     gap: 16px;
     justify-content: center;
-    background-color: slategray;
+    background-color: var(--surface);
     padding: 8px 16px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
@@ -115,7 +125,7 @@ nav a:hover{
     border-radius: 4px;
 }
 .hero{
-    background-color: slategray;
+    background-color: var(--surface);
     color:black;
     padding: 64px 24px;
     text-align: center;
@@ -137,4 +147,13 @@ nav a:hover{
     .hero h2{
         font-size: 3rem;
     }
+}
+body.dark{
+    --brand: rgb(235, 119, 253);
+    --page-bg: #3d3434;
+    --text: rgb(190, 172, 172);
+    --surface: rgb(65, 74, 84); 
+}
+body.dark nav a {
+    color: lightblue;
 }
