@@ -29,7 +29,6 @@ h2 {
 
 label {
     display: block;
-    margin-top: 16px;
     font-weight: bold;
 }
 
@@ -41,7 +40,7 @@ input, select, textarea {
 }
 
 button {
-    margin-top: 16px;
+
     display: block;
     padding: 10px;
     background-color: grey
@@ -70,4 +69,17 @@ input:user-invalid{
     padding: 16px;
     background-color: slategray;
     border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 30rem;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }

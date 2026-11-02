@@ -66,15 +66,23 @@
        
            <!--Signup Form -->
            <form>
+            
+            <div class="field">
             <label for="name">Your Name: </label>
             <input type="text" id="name" name="name" placeholder="First & Last Name" required>
+            </div>
 
+            <div class="field">
             <label for="email">Your Email: </label>
             <input type="email" name="email" id="email" placeholder="you@example.com" required>
+            </div>
 
+            <div class="field">
             <label for="password">Create Password: </label>
             <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+            </div>
 
+            <div class="field">
             <label for="membership">Membership Type: </label>
             <select id="membership" name="membership">
                 <option value="">Select Membership Type</option>
@@ -82,9 +90,12 @@
                 <option value="premium">Premium</option>
                 <option value="vip">VIP</option>
             </select>
+            </div>
 
+            <div class="field">
             <label for="message">Year, make, and model: </label>
             <textarea id="message" name="message" rows="4" placeholder="Enter your car details..."></textarea>
+            </div>
 
             <button type="submit">Sign up</button>
 
